@@ -28,7 +28,7 @@
         number = 10;
     }
     btn.innerText = number;
-    if (date.getDate() != localStorage.getItem("date")) {
+    if (date.getDate() != Number(localStorage.getItem("date"))) {
         btn.disabled = false;
     } else {
         btn.disabled = true;
