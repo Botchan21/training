@@ -30,6 +30,8 @@
     btn.innerText = number;
     if (date.getDate() != localStorage.getItem("date")) {
         btn.disabled = false;
+    } else {
+        btn.disabled = true;
     }
 
     btn.onclick = () => {
